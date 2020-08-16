@@ -30,15 +30,21 @@
           <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
               cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
               Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>  
-              <p-orderList [value]="jobs" [style]="{marginTop: '20px'}"  [listStyle]="{'height':'500px'}" header="Jobs" filterBy="title" filterPlaceholder="Filter by title"
+          <div class="content-section implementation">
+            <div class="card">
+              <p-orderList [value]="jobs" [style]="{marginTop: '20px'}" controlsPosition="" [listStyle]="{'height':'100%'}" header="Jobs" filterBy="title" filterPlaceholder="Filter by title"
               dragdrop="false">
                 <ng-template let-job pTemplate="item">
-                  <div class="ui-helper-clearfix">
+                  <div class="product-item">
                     <!-- <img src="https://source.unsplash.com/random?blacklivesmatter/400x400" style="display:inline-block;float: right;margin:2px 0 2px 2px; visibility: hidden" width="48"> -->
-                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.title}} - {{job.description}} - {{job.company}}</div>
+                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.title}}</div>
+                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.description}}</div>
+                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.company}}</div>
                   </div>
                 </ng-template>
-              </p-orderList>
+            </p-orderList>
+            </div>
+            </div>
       </p-tabPanel>
     </p-tabView>
 </div>
@@ -70,9 +76,7 @@
   <div class="p-col-6"><p-chart type="pie" [data]="dataPie" width="100%" height="60vh"></p-chart></div>
 </div>
 
-<p-card header="By The Numbers" subheader="Black Businesses" [style]="{marginTop: '20px'}" styleClass="ui-card-shadow">
-  <div style="line-height:1.5">By mid-April, 440,000 black business owners had shuttered their company for good — a 41% plunge. By comparison, 17% of white-owned businesses closed during the same period, the UC Santa Cruz research shows.
-
-    Several factors explain the high rate of closures of black-owned businesses. Perhaps most important, many lack access to bank credit, making it harder to survive financial emergencies. Many are micro-enterprises, providing a livelihood to a sole proprietor or a few employees at most. Profit margins are thin, while owners' financial savings are often meager, making them vulnerable to sudden downturns.</div>
+<p-card header="About The Team" subheader="Team Name" [style]="{marginTop: '20px'}" styleClass="ui-card-shadow">
+  <div style="line-height:1.5">Started this project in virtual Hackathon at Stevens Institute of Technology.</div>
 </p-card>
 <router-outlet></router-outlet>

@@ -5,16 +5,20 @@
 .navbar > a:hover:after{
     content: "Black Lives Matter.";
 }
+.card{
+    word-wrap: normal !important;
+}
+
 /* content:  url('../assets/blm.png')  */
 /* button {width:6em}
 button:hover span {display:none}
 button:hover:before {content:"Reply!"} */
 
-:host ::ng-deep .p-button {
+/* :host ::ng-deep .p-button {
     margin-right: .25rem;
 }
 
 :host ::ng-deep .p-tabview p {
     line-height: 1.5;
     margin: 0;
-}
+} */
