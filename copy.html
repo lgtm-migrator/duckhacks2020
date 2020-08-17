@@ -1,0 +1,82 @@
+
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+  <a class="navbar-brand mx-auto" href="#"><span><img height="50px" src="assets/blm.png"/></span></a>
+</nav>
+
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+<div class="card">
+    <p-tabView>
+        <p-tabPanel header="What is BLM?">
+          <div class="p-grid">
+            <div class="p-col-12">
+            <p>Black Lives Matter began as a call to action in response to state-sanctioned violence and anti-Black racism. Our intention from the very beginning was to connect Black people from all over the world who have a shared desire for justice to act together in their communities. The impetus for that commitment was, and still is, the rampant and deliberate violence inflicted on us by the state.</p>    
+              </div>
+            <div class="p-col-6"><iframe width="100%" height="315" src="https://www.youtube.com/embed/YG8GjlLbbvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="p-col-6"><iframe width="100%" height="315" src="https://www.youtube.com/embed/zwqxb_Z8sCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YG8GjlLbbvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zwqxb_Z8sCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+        </p-tabPanel>
+        <p-tabPanel header="How to support?">
+            <p>We encourage you to your support of the movement and our ongoing fight to end State-sanctioned violence, liberate Black people, and end white supremacy forever. Black Lives Matter is a central target of disinformation and you are a key line of defense. Report suspicious sites, stories, ads, social accounts, and posts about BLM.</p>
+                <a href="https://blacklivesmatters.carrd.co/">Click here for resources to support.</a>
+        </p-tabPanel>
+        <p-tabPanel header="Local Black Businesses">
+            <p>Our goal is to list every Black Owned business, church, entertainer, restaurant, etc, in the whole world. See below for the information we were able to recieve so far</p> 
+            <a href="https://104.197.72.203/gmap.html">Click here for local businesses to support.</a>
+        </p-tabPanel>
+        <p-tabPanel header="Bulletin">
+          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+              cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>  
+          <div class="content-section implementation">
+            <div class="card">
+              <p-orderList [value]="jobs" [style]="{marginTop: '20px'}" controlsPosition="" [listStyle]="{'height':'100%'}" header="Jobs" filterBy="title" filterPlaceholder="Filter by title"
+              dragdrop="false">
+                <ng-template let-job pTemplate="item">
+                  <div class="product-item">
+                    <!-- <img src="https://source.unsplash.com/random?blacklivesmatter/400x400" style="display:inline-block;float: right;margin:2px 0 2px 2px; visibility: hidden" width="48"> -->
+                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.title}}</div>
+                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.description}}</div>
+                    <div style="font-size:14px;margin:15px 5px 0 0">{{job.company}}</div>
+                  </div>
+                </ng-template>
+            </p-orderList>
+            </div>
+            </div>
+      </p-tabPanel>
+    </p-tabView>
+</div>
+<p-card header="By The Numbers" subheader="Black Businesses" [style]="{marginTop: '20px'}" styleClass="ui-card-shadow">
+  <div style="line-height:1.5">By mid-April, 440,000 black business owners had shuttered their company for good — a 41% plunge. By comparison, 17% of white-owned businesses closed during the same period, the UC Santa Cruz research shows.
+
+    Several factors explain the high rate of closures of black-owned businesses. Perhaps most important, many lack access to bank credit, making it harder to survive financial emergencies. Many are micro-enterprises, providing a livelihood to a sole proprietor or a few employees at most. Profit margins are thin, while owners' financial savings are often meager, making them vulnerable to sudden downturns.</div>
+</p-card>
+<!-- <p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap> -->
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+
+<p-chart class="p-d-flex p-jc-center" type="line" [data]="data" width="50vw" height="60vh" (onDataSelect)="selectData($event)"></p-chart>
+
+<p-card header="What are the issues" [style]="{marginTop: '20px'}" styleClass="ui-card-shadow">
+  <div style="line-height:1.5">By mid-April, 440,000 black business owners had shuttered their company for good — a 41% plunge. By comparison, 17% of white-owned businesses closed during the same period, the UC Santa Cruz research shows.
+
+    Several factors explain the high rate of closures of black-owned businesses. Perhaps most important, many lack access to bank credit, making it harder to survive financial emergencies. Many are micro-enterprises, providing a livelihood to a sole proprietor or a few employees at most. Profit margins are thin, while owners' financial savings are often meager, making them vulnerable to sudden downturns.</div>
+    <div class="p-grid">
+      <div class="p-col-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?nojusticenopeace/400x400"/></div>
+      <div class="p-col-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?blacklivesmatter/400x400"/></div>
+      <div class="p-col-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?blm/400x400"/></div>
+    </div>
+</p-card>
+<!-- <p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap> -->
+<p-toast [style]="{marginTop: '80px'}"></p-toast>
+
+<div class="p-grid" [style]="{marginTop: '40px'}">
+  <div class="p-col-6"><p-chart type="pie" [data]="dataPie" width="100%" height="60vh"></p-chart></div>
+  <div class="p-col-6"><p-chart type="pie" [data]="dataPie" width="100%" height="60vh"></p-chart></div>
+</div>
+
+<p-card header="About The Team" subheader="Team Name" [style]="{marginTop: '20px'}" styleClass="ui-card-shadow">
+  <div style="line-height:1.5">Started this project in virtual Hackathon at Stevens Institute of Technology.</div>
+</p-card>
+<router-outlet></router-outlet>
