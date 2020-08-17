@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,8 +15,7 @@ import {ToastModule} from 'primeng/toast';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import {TabViewModule} from 'primeng/tabview';
 import {OrderListModule} from 'primeng/orderlist';
-
-
+import {DialogModule} from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -23,6 +23,7 @@ import {OrderListModule} from 'primeng/orderlist';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MenubarModule,
     GMapModule,
@@ -33,7 +34,8 @@ import {OrderListModule} from 'primeng/orderlist';
     ScrollPanelModule,
     TabViewModule,
     OrderListModule,
-    HttpClientModule
+    HttpClientModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -9,6 +9,10 @@
     word-wrap: normal !important;
 }
 
+.item-link:hover{
+    text-decoration: none;
+}
+
 /* content:  url('../assets/blm.png')  */
 /* button {width:6em}
 button:hover span {display:none}

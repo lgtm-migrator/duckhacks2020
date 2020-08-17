@@ -18,7 +18,9 @@ export class AppComponent {
   overlays: any[];
   data: any;
   dataPie: any;
+  dataPie2: any;
   jobs: Job[];
+  display: boolean = false;
 
   constructor(private messageService: MessageService, private jobService: JobService) {
       this.data = {
@@ -39,22 +41,50 @@ export class AppComponent {
           ]
       }
       this.dataPie = {
-        labels: ['A','B','C'],
+        labels: ['Gen X','Boomers','Silent Gen', 'Millenials'],
         datasets: [
             {
-                data: [300, 50, 100],
+                data: [45, 31, 2, 22],
                 backgroundColor: [
-                    "#FF6384",
+                    "#4bc0c0",
                     "#36A2EB",
-                    "#FFCE56"
+                    "#565656",
+                    "#008080"
                 ],
                 hoverBackgroundColor: [
-                    "#FF6384",
-                    "#36A2EB",
-                    "#FFCE56"
+                    "#4169e1",
+                    "#4169e1",
+                    "#4169e1",
+                    "#4169e1"
                 ]
             }]    
         };
+
+        this.dataPie2 = {
+          labels: ['High School','Associates','Bachelors', 'Masters', 'Doctorate'],
+          datasets: [
+              {
+                  data: [29, 19, 27, 20, 5],
+                  backgroundColor: [
+                      "#4bc0c0",
+                      "#36A2EB",
+                      "#565656",
+                      "#008080",
+                      "#D3D3D3"
+                  ],
+                  hoverBackgroundColor: [
+                      "#4169e1",
+                      "#4169e1",
+                      "#4169e1",
+                      "#4169e1",
+                      "#4169e1",
+                  ]
+              }]    
+          };
+  }
+
+  showDialog() {
+    this.display = true;
   }
 
   selectData(event) {
