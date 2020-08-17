@@ -1,19 +1,18 @@
 
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
   <a class="navbar-brand mx-auto" href="#"><span><img height="50px" src="assets/blm.png"/></span></a>
 </nav>
-
 <p-toast [style]="{marginTop: '80px'}"></p-toast>
-<div class="card">
+<div class="card" [style]="{'width':'100%'}">
     <p-tabView>
         <p-tabPanel header="What is BLM?">
           <div class="p-grid">
             <div class="p-col-12">
             <p>Black Lives Matter began as a call to action in response to state-sanctioned violence and anti-Black racism. Our intention from the very beginning was to connect Black people from all over the world who have a shared desire for justice to act together in their communities. The impetus for that commitment was, and still is, the rampant and deliberate violence inflicted on us by the state.</p>    
               </div>
-            <div class="p-col-6"><iframe width="100%" height="315" src="https://www.youtube.com/embed/YG8GjlLbbvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="p-col-6"><iframe width="100%" height="315" src="https://www.youtube.com/embed/zwqxb_Z8sCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="p-col-12 p-lg-6"><iframe width="100%" height="315" src="https://www.youtube.com/embed/YG8GjlLbbvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <div class="p-col-12 p-lg-6"><iframe width="100%" height="315" src="https://www.youtube.com/embed/zwqxb_Z8sCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/YG8GjlLbbvs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/zwqxb_Z8sCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
           </div>
@@ -27,14 +26,12 @@
             <p-gmap [options]="options" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
         </p-tabPanel>
         <p-tabPanel header="Bulletin">
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-              cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-              Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>  
+          <p>Here is a bulletin for black owned companies that may need help.</p>  
           <!-- <p-dialog header="Title" [(visible)]="display">
             Content
           </p-dialog> -->
           <!-- <button type="button" (click)="showDialog()" icon="pi pi-info-circle" label="Show"></button> -->
-          <button type="button" (click)="showDialog()" pButton icon="pi pi-external-link" label="Add Bulletin"></button>
+          <!-- <button type="button" (click)="showDialog()" pButton icon="pi pi-external-link" label="Add Bulletin"></button>
           <p-dialog header="Add Bulletin" [(visible)]="display" [style]="{width: '50vw'}" [baseZIndex]="10000">
             <div class="p-grid p-fluid">
               <div class="p-col-12 p-md-6">
@@ -70,7 +67,7 @@
             <button type="button" pButton icon="pi pi-check" (click)="display=false" label="Yes"></button>
             <button type="button" pButton icon="pi pi-times" (click)="display=false" label="No" class="ui-button-secondary"></button>
         </p-footer>
-    </p-dialog>
+    </p-dialog> -->
           <!-- <p-button (click)="showDialog()" [style]="{margin: '10px'}"  label="Add Bulletin" icon="pi pi-plus" iconPos="left"></p-button> -->
           <div class="content-section implementation">
             <div class="card">
@@ -99,26 +96,26 @@
     Several factors explain the high rate of closures of black-owned businesses. Perhaps most important, many lack access to bank credit, making it harder to survive financial emergencies. Many are micro-enterprises, providing a livelihood to a sole proprietor or a few employees at most. Profit margins are thin, while owners' financial savings are often meager, making them vulnerable to sudden downturns.</div>
 </p-card>
 <!-- <p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap> -->
-<p-toast [style]="{marginTop: '80px'}"></p-toast>
+<!-- <p-toast [style]="{marginTop: '80px'}"></p-toast>
 
-<p-chart class="p-d-flex p-jc-center" type="line" [data]="data" width="50vw" height="60vh" (onDataSelect)="selectData($event)"></p-chart>
+<p-chart class="p-d-flex p-jc-center" type="line" [data]="data" width="100%" height="60vh" (onDataSelect)="selectData($event)"></p-chart> -->
 
 <p-card header="What are the issues" [style]="{marginTop: '20px'}" styleClass="ui-card-shadow">
   <div style="line-height:1.5" [style]="{marginBottom: '10px'}">The three biggest challenges for black entrepreneurs are a lack of capital or cash flow; marketing and advertising; and time management. These three areas continue to be the year to year trend for top challenges. Also, Black owners have historically been denied loans more than any other racial group(according to Federal Reserve data). As a result, many African-Americans with a business avoid banks altogether. Black businesses come in a large variety of education and age backgrounds as seen below.
 
   </div>
     <div class="p-grid">
-      <div class="p-col-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?nojusticenopeace/400x400"/></div>
-      <div class="p-col-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?blacklivesmatter/400x400"/></div>
-      <div class="p-col-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?blm/400x400"/></div>
+      <div class="p-col-12 p-lg-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?nojusticenopeace/400x400"/></div>
+      <div class="p-col-12 p-lg-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?blacklivesmatter/400x400"/></div>
+      <div class="p-col-12 p-lg-4"><img width="100%" height="400px" src="https://source.unsplash.com/random?blm/400x400"/></div>
     </div>
 </p-card>
 <!-- <p-gmap [options]="options" [style]="{'width':'100%','height':'320px'}" ></p-gmap> -->
 <p-toast [style]="{marginTop: '80px'}"></p-toast>
 
 <div class="p-grid" [style]="{marginTop: '40px'}">
-  <div class="p-col-6"><h2 class="p-d-flex p-jc-center">Age Range</h2><p-chart type="pie" [data]="dataPie" width="100%" height="60vh"></p-chart></div>
-  <div class="p-col-6"><h2 class="p-d-flex p-jc-center">Education Range</h2><p-chart type="pie" [data]="dataPie2" width="100%" height="60vh"></p-chart></div>
+  <div class="p-col-12 p-lg-6"><h2 class="p-d-flex p-jc-center">Age Range</h2><p-chart type="pie" [data]="dataPie" width="100%" height="60vh"></p-chart></div>
+  <div class="p-col-12 p-lg-6"><h2 class="p-d-flex p-jc-center">Education Range</h2><p-chart type="pie" [data]="dataPie2" width="100%" height="60vh"></p-chart></div>
 </div>
 
 <footer class="page-footer font-small blue pt-4">
